@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slice>
+    <section>
+        <sliver fullWidth="YES">
+            <property type="asset-tags" keyPath="inspectedObjectsController.selection.assetTags" knownTagsKeyPath="inspectedObjectsController.selection.ideInspectedPossibleAssetTags" canHaveAssetTagsKeyPath="inspectedObjectsController.selection.canHaveAssetTags" placeholderKeyPath="inspectedObjectsController.selection.ideInspectedAssetTagPlaceholder"/>
+        </sliver>
+    </section>
+</slice>

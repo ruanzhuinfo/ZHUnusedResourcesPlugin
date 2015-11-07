@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0470B47E1BEDF91C005992EE /* IDEWorkspace+Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470B47D1BEDF91C005992EE /* IDEWorkspace+Plugin.m */; };
+		0470B4801BEDFB4A005992EE /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0470B47F1BEDFB4A005992EE /* IDEFoundation.framework */; };
+		0470B4821BEDFB58005992EE /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0470B4811BEDFB58005992EE /* DVTFoundation.framework */; };
+		0470B4851BEDFCFD005992EE /* DVTFilePath+Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470B4841BEDFCFD005992EE /* DVTFilePath+Plugin.m */; };
+		04AE488C1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE488B1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.m */; };
+		04AE488F1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE488E1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.m */; };
+		04F87D941BEC6E6B00D93700 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F87D931BEC6E6B00D93700 /* AppKit.framework */; };
+		04F87D961BEC6E6B00D93700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F87D951BEC6E6B00D93700 /* Foundation.framework */; };
+		04F87D9A1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 04F87D991BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcscheme */; };
+		04F87D9D1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87D9C1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m */; };
+		04F87DA01BEC6E6B00D93700 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87D9F1BEC6E6B00D93700 /* NSObject_Extension.m */; };
+		04F87DA81BEC6F1F00D93700 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F87DA71BEC6F1F00D93700 /* IDEKit.framework */; };
+		04F87DAA1BEC6F2900D93700 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F87DA91BEC6F2900D93700 /* DVTKit.framework */; };
+		04F87DB01BEC716E00D93700 /* IDEEditorContext+Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87DAF1BEC716E00D93700 /* IDEEditorContext+Plugin.m */; };
+		04F87DB31BEC71B500D93700 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87DB21BEC71B500D93700 /* MethodSwizzle.m */; };
+		04F87DC31BEC757400D93700 /* FilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87DC21BEC757400D93700 /* FilesManager.m */; };
+		04F87DC61BEC786700D93700 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F87DC51BEC786700D93700 /* StringUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0470B47C1BEDF91C005992EE /* IDEWorkspace+Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEWorkspace+Plugin.h"; sourceTree = "<group>"; };
+		0470B47D1BEDF91C005992EE /* IDEWorkspace+Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEWorkspace+Plugin.m"; sourceTree = "<group>"; };
+		0470B47F1BEDFB4A005992EE /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = ZHUnusedResourcesPlugin/IDEFoundation.framework; sourceTree = "<group>"; };
+		0470B4811BEDFB58005992EE /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ZHUnusedResourcesPlugin/DVTFoundation.framework; sourceTree = "<group>"; };
+		0470B4831BEDFCFD005992EE /* DVTFilePath+Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTFilePath+Plugin.h"; sourceTree = "<group>"; };
+		0470B4841BEDFCFD005992EE /* DVTFilePath+Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTFilePath+Plugin.m"; sourceTree = "<group>"; };
+		04AE488A1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDENavigatorOutlineView+Plugin.h"; sourceTree = "<group>"; };
+		04AE488B1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDENavigatorOutlineView+Plugin.m"; sourceTree = "<group>"; };
+		04AE488D1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEOutlineBasedNavigator+Plugin.h"; sourceTree = "<group>"; };
+		04AE488E1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEOutlineBasedNavigator+Plugin.m"; sourceTree = "<group>"; };
+		04F87D901BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHUnusedResourcesPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F87D931BEC6E6B00D93700 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		04F87D951BEC6E6B00D93700 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		04F87D991BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ZHUnusedResourcesPlugin.xcscheme; path = ZHUnusedResourcesPlugin.xcodeproj/xcshareddata/xcschemes/ZHUnusedResourcesPlugin.xcscheme; sourceTree = SOURCE_ROOT; };
+		04F87D9B1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHUnusedResourcesPlugin.h; sourceTree = "<group>"; };
+		04F87D9C1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHUnusedResourcesPlugin.m; sourceTree = "<group>"; };
+		04F87D9E1BEC6E6B00D93700 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		04F87D9F1BEC6E6B00D93700 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		04F87DA11BEC6E6B00D93700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F87DA71BEC6F1F00D93700 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ZHUnusedResourcesPlugin/IDEKit.framework; sourceTree = "<group>"; };
+		04F87DA91BEC6F2900D93700 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ZHUnusedResourcesPlugin/DVTKit.framework; sourceTree = "<group>"; };
+		04F87DAD1BEC70EE00D93700 /* PrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPI.h; sourceTree = "<group>"; };
+		04F87DAE1BEC716E00D93700 /* IDEEditorContext+Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEEditorContext+Plugin.h"; sourceTree = "<group>"; };
+		04F87DAF1BEC716E00D93700 /* IDEEditorContext+Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEEditorContext+Plugin.m"; sourceTree = "<group>"; };
+		04F87DB11BEC71B500D93700 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		04F87DB21BEC71B500D93700 /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		04F87DC11BEC757400D93700 /* FilesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesManager.h; sourceTree = "<group>"; };
+		04F87DC21BEC757400D93700 /* FilesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesManager.m; sourceTree = "<group>"; };
+		04F87DC41BEC786700D93700 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		04F87DC51BEC786700D93700 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F87D8E1BEC6E6B00D93700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0470B4821BEDFB58005992EE /* DVTFoundation.framework in Frameworks */,
+				0470B4801BEDFB4A005992EE /* IDEFoundation.framework in Frameworks */,
+				04F87DAA1BEC6F2900D93700 /* DVTKit.framework in Frameworks */,
+				04F87DA81BEC6F1F00D93700 /* IDEKit.framework in Frameworks */,
+				04F87D941BEC6E6B00D93700 /* AppKit.framework in Frameworks */,
+				04F87D961BEC6E6B00D93700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F87D871BEC6E6B00D93700 = {
+			isa = PBXGroup;
+			children = (
+				04F87D971BEC6E6B00D93700 /* ZHUnusedResourcesPlugin */,
+				04F87D921BEC6E6B00D93700 /* Frameworks */,
+				04F87D911BEC6E6B00D93700 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F87D911BEC6E6B00D93700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F87D901BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F87D921BEC6E6B00D93700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0470B4811BEDFB58005992EE /* DVTFoundation.framework */,
+				0470B47F1BEDFB4A005992EE /* IDEFoundation.framework */,
+				04F87DA91BEC6F2900D93700 /* DVTKit.framework */,
+				04F87DA71BEC6F1F00D93700 /* IDEKit.framework */,
+				04F87D931BEC6E6B00D93700 /* AppKit.framework */,
+				04F87D951BEC6E6B00D93700 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F87D971BEC6E6B00D93700 /* ZHUnusedResourcesPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				04F87DC01BEC74A800D93700 /* CateGory */,
+				04F87DB71BEC744700D93700 /* Utility */,
+				04F87DAD1BEC70EE00D93700 /* PrivateAPI.h */,
+				04F87D9B1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.h */,
+				04F87D9C1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m */,
+				04F87D9E1BEC6E6B00D93700 /* NSObject_Extension.h */,
+				04F87D9F1BEC6E6B00D93700 /* NSObject_Extension.m */,
+				04F87D981BEC6E6B00D93700 /* Supporting Files */,
+				04F87DC11BEC757400D93700 /* FilesManager.h */,
+				04F87DC21BEC757400D93700 /* FilesManager.m */,
+			);
+			path = ZHUnusedResourcesPlugin;
+			sourceTree = "<group>";
+		};
+		04F87D981BEC6E6B00D93700 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F87DA11BEC6E6B00D93700 /* Info.plist */,
+				04F87D991BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F87DB71BEC744700D93700 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04F87DC41BEC786700D93700 /* StringUtils.h */,
+				04F87DC51BEC786700D93700 /* StringUtils.m */,
+				04F87DB11BEC71B500D93700 /* MethodSwizzle.h */,
+				04F87DB21BEC71B500D93700 /* MethodSwizzle.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		04F87DC01BEC74A800D93700 /* CateGory */ = {
+			isa = PBXGroup;
+			children = (
+				04F87DAE1BEC716E00D93700 /* IDEEditorContext+Plugin.h */,
+				04F87DAF1BEC716E00D93700 /* IDEEditorContext+Plugin.m */,
+				04AE488A1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.h */,
+				04AE488B1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.m */,
+				04AE488D1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.h */,
+				04AE488E1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.m */,
+				0470B47C1BEDF91C005992EE /* IDEWorkspace+Plugin.h */,
+				0470B47D1BEDF91C005992EE /* IDEWorkspace+Plugin.m */,
+				0470B4831BEDFCFD005992EE /* DVTFilePath+Plugin.h */,
+				0470B4841BEDFCFD005992EE /* DVTFilePath+Plugin.m */,
+			);
+			name = CateGory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F87D8F1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F87DA41BEC6E6B00D93700 /* Build configuration list for PBXNativeTarget "ZHUnusedResourcesPlugin" */;
+			buildPhases = (
+				04F87D8C1BEC6E6B00D93700 /* Sources */,
+				04F87D8D1BEC6E6B00D93700 /* Resources */,
+				04F87D8E1BEC6E6B00D93700 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHUnusedResourcesPlugin;
+			productName = ZHUnusedResourcesPlugin;
+			productReference = 04F87D901BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F87D881BEC6E6B00D93700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = taffy;
+				TargetAttributes = {
+					04F87D8F1BEC6E6B00D93700 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 04F87D8B1BEC6E6B00D93700 /* Build configuration list for PBXProject "ZHUnusedResourcesPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04F87D871BEC6E6B00D93700;
+			productRefGroup = 04F87D911BEC6E6B00D93700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F87D8F1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F87D8D1BEC6E6B00D93700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F87D9A1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F87D8C1BEC6E6B00D93700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F87DC61BEC786700D93700 /* StringUtils.m in Sources */,
+				0470B47E1BEDF91C005992EE /* IDEWorkspace+Plugin.m in Sources */,
+				0470B4851BEDFCFD005992EE /* DVTFilePath+Plugin.m in Sources */,
+				04F87D9D1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m in Sources */,
+				04AE488F1BECB70300C91838 /* IDEOutlineBasedNavigator+Plugin.m in Sources */,
+				04F87DA01BEC6E6B00D93700 /* NSObject_Extension.m in Sources */,
+				04F87DB01BEC716E00D93700 /* IDEEditorContext+Plugin.m in Sources */,
+				04F87DB31BEC71B500D93700 /* MethodSwizzle.m in Sources */,
+				04AE488C1BECB2A600C91838 /* IDENavigatorOutlineView+Plugin.m in Sources */,
+				04F87DC31BEC757400D93700 /* FilesManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04F87DA21BEC6E6B00D93700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		04F87DA31BEC6E6B00D93700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		04F87DA51BEC6E6B00D93700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHUnusedResourcesPlugin",
+				);
+				INFOPLIST_FILE = ZHUnusedResourcesPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zhihu.com.ZHUnusedResourcesPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		04F87DA61BEC6E6B00D93700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHUnusedResourcesPlugin",
+				);
+				INFOPLIST_FILE = ZHUnusedResourcesPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = www.zhihu.com.ZHUnusedResourcesPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F87D8B1BEC6E6B00D93700 /* Build configuration list for PBXProject "ZHUnusedResourcesPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F87DA21BEC6E6B00D93700 /* Debug */,
+				04F87DA31BEC6E6B00D93700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F87DA41BEC6E6B00D93700 /* Build configuration list for PBXNativeTarget "ZHUnusedResourcesPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F87DA51BEC6E6B00D93700 /* Debug */,
+				04F87DA61BEC6E6B00D93700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F87D881BEC6E6B00D93700 /* Project object */;
+}
