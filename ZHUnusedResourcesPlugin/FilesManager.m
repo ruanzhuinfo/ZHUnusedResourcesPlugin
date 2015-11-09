@@ -124,26 +124,15 @@
       groupIndex = 1;
       break;
     case FileTypeSwift:
-      pattern = @"(imageNamed)(\\s*:\\s*)(@\"\\w+\")"; //@"named:\"(\\S+)\"";//UIImage(named:"xx")
+      pattern = @"(named)(\\s*:\\s*)(\"\\w+\")";
       groupIndex = 1;
       break;
     case FileTypeXib:
-      pattern = @"image name=\"(\\S+)\"";//image name="xx"
+      pattern = @"image name=\"(\\S+)\"";
       groupIndex = 1;
       break;
-    case FileTypeHtml:
-      pattern = @"img\\s+src=\"(\\S+)\"";//<img src="xx">
-      groupIndex = 1;
-      break;
-    case FileTypeJson:
-      pattern = @":\\s+\"(\\S+)\"";//"xx"
-      groupIndex = 1;
-      break;
-    case FileTypeCSS:
     case FileTypePlist:
-    case FileTypeH:
-    case FileTypeC:
-      pattern = @"(\\S+)\\.(png|gif|jpg|jpeg)";//*.png
+      pattern = @"(\\S+)\\.(png|gif|jpg|jpeg)";
       groupIndex = 1;
       break;
     default:

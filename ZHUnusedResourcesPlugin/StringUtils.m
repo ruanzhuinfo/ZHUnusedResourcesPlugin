@@ -13,6 +13,10 @@ static NSString * const kSuffix3x = @"@3x";
 
 static NSString * const kMethodNameCustom = @"GET_IMAGE";
 static NSString * const kMethodNameSystem = @"imageNamed";
+static NSString * const kPlistImagePrefixName = @"<string>";
+static NSString * const kXibImagePrefixName = @"image name";
+static NSString * const kSwiftMethodNameSystem = @"named";
+
 
 @implementation StringUtils
 
@@ -23,25 +27,59 @@ static NSString * const kMethodNameSystem = @"imageNamed";
 
 + (NSString *)getNameFormString: (NSString *)str {
   
+  NSString *tempName = nil;
+  
+  // name : "xxx"
+  if ([str hasPrefix:kSwiftMethodNameSystem]) {
+    NSArray *strs = [str componentsSeparatedByString:@"\""];
+    for (NSString *s in strs) {
+      if (![s hasPrefix:kXibImagePrefixName] && ![s isEqualToString:@""]) {
+        tempName = s;
+      }
+    }
+  }
+  
+  // image name="xxx.png"
+  if ([str hasPrefix:kXibImagePrefixName]) {
+    NSArray *strs = [str componentsSeparatedByString:@"\""];
+    for (NSString *s in strs) {
+      if (![s hasPrefix:kXibImagePrefixName] && ![s isEqualToString:@""]) {
+        tempName = s;
+      }
+    }
+  }
+  
+  // <string>xxx.png
+  if ([str hasPrefix:kPlistImagePrefixName]) {
+    NSString *s = [str stringByReplacingOccurrencesOfString:@"<string>" withString:@""];
+    tempName = s;
+  }
+  
+  //  GET_IMAGE(xxx)
   if ([str hasPrefix:kMethodNameCustom]) {
     NSArray *strs = [str componentsSeparatedByString:@"("];
     for (NSString *s in strs) {
       if ([s hasSuffix:@")"]) {
-        return [s substringToIndex:s.length -1];
+        tempName = [s substringToIndex:s.length -1];
       }
     }
   }
   
+  //  imageNamed:@"xxx"
   if ([str hasPrefix:kMethodNameSystem]) {
     NSArray *strs = [str componentsSeparatedByString:@"\""];
     for (NSString *s in strs) {
       if (![s hasPrefix:kMethodNameSystem]) {
-        return s;
+        tempName = s;
       }
     }
   }
   
-  return nil;
+  if (!tempName) {
+    return nil;
+  }
+  
+  return [StringUtils stringByRemoveResourceSuffix:tempName];
 }
 
 + (NSString *) getNameFromFullName: (NSString *)fullName {
