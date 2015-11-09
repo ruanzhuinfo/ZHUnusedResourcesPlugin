@@ -13,9 +13,12 @@
 @implementation IDENavigatorOutlineView (Plugin)
 
 +(void)load {
-  MethodSwizzle(self, @selector(mouseDown:), @selector(zh_mouseDown:));
-  MethodSwizzle(self, @selector(sendAction:to:), @selector(zh_sendAction:to:));
-  MethodSwizzle(self, @selector(expandItem:expandChildren:), @selector(zh_expandItem:expandChildren:));
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    MethodSwizzle(self, @selector(mouseDown:), @selector(zh_mouseDown:));
+    MethodSwizzle(self, @selector(sendAction:to:), @selector(zh_sendAction:to:));
+    MethodSwizzle(self, @selector(expandItem:expandChildren:), @selector(zh_expandItem:expandChildren:));
+  });
 }
 
 
@@ -24,17 +27,15 @@
   [self zh_mouseDown:arg1];
 }
 
-- (void)zh_expandItem:(id)arg1 {
-  
-}
+//- (void)zh_expandItem:(id)arg1 {
+//  
+//}
 - (void)zh_expandItem:(id)arg1 expandChildren:(BOOL)arg2 {
 //  NSLog(@"%@ \n %i", arg1, arg2);
   [self zh_expandItem:arg1 expandChildren:arg2];
 }
 - (BOOL)zh_sendAction:(SEL)arg1 to:(id)arg2 {
 //  NSLog(@"%@", arg2);
-  
-  NSLog(@"%@", [self currentWorkspaceDocument]);
   
   return [self zh_sendAction:arg1 to:arg2];
 }
@@ -46,12 +47,4 @@
 //
 //}
 
-- (id)currentWorkspaceDocument {
-  NSWindowController *currentWindowController = [[NSApp keyWindow] windowController];
-  id document = [currentWindowController document];
-  if (currentWindowController && [document isKindOfClass:NSClassFromString(@"IDEWorkspaceDocument")]) {
-    return document;
-  }
-  return nil;
-}
 @end

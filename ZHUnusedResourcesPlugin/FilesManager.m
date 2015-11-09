@@ -14,6 +14,7 @@
   NSMutableDictionary *_resourceNameList;
   NSString *_projectPath;
   NSArray *_fileSuffixs;
+  BOOL _isRunding;
 }
 
 + (instancetype)sharedObject {
@@ -27,7 +28,6 @@
 }
 
 - (void) startWithProjectPath:(NSString *)projectPath fileSuffixs:(NSString *)fileSuffixs {
-
   NSArray *suffixs = [StringUtils fileSuffixs:fileSuffixs];
   
   if (projectPath.length == 0 || suffixs.count == 0) {
@@ -46,14 +46,18 @@
 }
 
 - (BOOL) isUsedAtResourceName: (NSString *)name {
+ 
+  if (_isRunding) {
+    return YES;
+  }
   
   NSString *keyName = [StringUtils getNameFromFullName:name];
-  if (keyName.length > 0) {
-    if ([_resourceNameList objectForKey:keyName]) {
-      return YES;
-    } else {
-      return NO;
-    }
+  if (!keyName || [keyName isEqualToString:@""]) {
+    return YES;
+  }
+  
+  if (![_resourceNameList objectForKey:keyName]) {
+    return NO;
   }
   
   return YES;
@@ -63,12 +67,14 @@
 #pragma mark - private method
 
 - (void) runSearchTask {
-   _resourceNameList = [NSMutableDictionary new];
+  _resourceNameList = [NSMutableDictionary new];
+  _isRunding = YES;
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     [self handleFilesAtPath:_projectPath];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       NSLog(@"files completion!!");
+      _isRunding = NO;
     });
   });
 }
@@ -114,7 +120,7 @@
   NSInteger groupIndex = -1;
   switch (fileType) {
     case FileTypeObjC:
-      pattern =  @"(imageNamed)(\\s*:\\s*)(@\"\\w+\")|(GET_IMAGE)(\\(\\w+\\))";//or: (imageNamed|contentOfFile):@\"(.*)\" @"(GET_IMAGE)\((\w+)\)|(imageNamed)(\s*):(\s*)@\"(\w+)\""
+      pattern =  @"(imageNamed)(\\s*:\\s*)(@\"\\w+\")|(GET_IMAGE)(\\(\\w+\\))";
       groupIndex = 1;
       break;
     case FileTypeSwift:

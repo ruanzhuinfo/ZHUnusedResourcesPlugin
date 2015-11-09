@@ -48,11 +48,18 @@
 - (void) IDEWorkspaceBuildProductsLocationDidChange: (NSNotification *)notity {
  
   if ([notity.object isKindOfClass:[IDEWorkspace class]]) {
+    
     IDEWorkspace *workspace = notity.object;
     DVTFilePath *filePath = [workspace _wrappingContainerPath];
     
 //    NSLog(@"%@", [filePath fileName]);
 //    NSLog(@"%@", [filePath pathString]);
+    
+    if ([[filePath fileName] isEqualToString:@"ZHUnusedResourcesPlugin.xcodeproj"] ||
+        ![filePath fileName] ||
+        [[filePath fileName] isEqualToString:@""]) {
+      return;
+    }
     
     NSString *dir = [[filePath pathString] stringByReplacingOccurrencesOfString:
                      [NSString stringWithFormat:@"/%@", [filePath fileName]] withString:@""];

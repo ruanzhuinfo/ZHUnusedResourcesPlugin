@@ -116,9 +116,9 @@
 				04F87D9C1BEC6E6B00D93700 /* ZHUnusedResourcesPlugin.m */,
 				04F87D9E1BEC6E6B00D93700 /* NSObject_Extension.h */,
 				04F87D9F1BEC6E6B00D93700 /* NSObject_Extension.m */,
-				04F87D981BEC6E6B00D93700 /* Supporting Files */,
 				04F87DC11BEC757400D93700 /* FilesManager.h */,
 				04F87DC21BEC757400D93700 /* FilesManager.m */,
+				04F87D981BEC6E6B00D93700 /* Supporting Files */,
 			);
 			path = ZHUnusedResourcesPlugin;
 			sourceTree = "<group>";
