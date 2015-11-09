@@ -10,7 +10,6 @@
 ## 使用
 1. 在 `Xcode`的文件列表中直接单击你的图片文件，
 如果这个图片没有使用，会在 `debug` 框中会输出 `xxxx.png unuse!!!` 的提示;
-2. 支持的项目：`OC 项目` ;
-3. 支持过滤的项目文件：`.h、.m、.mm、xib、plist、Swift`;
-4. 支持过滤的资源文件：`[UIImage imageNamed:"xxx"]`、`UIImage(named:"xxx")`、 
+2. 支持过滤的项目文件：`.h、.m、.mm、.swift、xib、plist`;
+3. 支持过滤的资源文件：`[UIImage imageNamed:"xxx"]`、`UIImage(named:"xxx")`、 
 自定义的方法（`GET_IMAGE("xxx")`）.
