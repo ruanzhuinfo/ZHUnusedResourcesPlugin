@@ -14,7 +14,7 @@
   NSMutableDictionary *_resourceNameList;
   NSString *_projectPath;
   NSArray *_fileSuffixs;
-  BOOL _isRunding;
+  BOOL _isRuned;
 }
 
 + (instancetype)sharedObject {
@@ -47,7 +47,7 @@
 
 - (BOOL) isUsedAtResourceName: (NSString *)name {
  
-  if (_isRunding) {
+  if (!_isRuned) {
     return YES;
   }
   
@@ -68,13 +68,12 @@
 
 - (void) runSearchTask {
   _resourceNameList = [NSMutableDictionary new];
-  _isRunding = YES;
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     [self handleFilesAtPath:_projectPath];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       NSLog(@"files completion!!");
-      _isRunding = NO;
+      _isRuned = YES;
     });
   });
 }

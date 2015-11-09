@@ -69,7 +69,7 @@ static NSString * const kSwiftMethodNameSystem = @"named";
   if ([str hasPrefix:kMethodNameSystem]) {
     NSArray *strs = [str componentsSeparatedByString:@"\""];
     for (NSString *s in strs) {
-      if (![s hasPrefix:kMethodNameSystem]) {
+      if (![s hasPrefix:kMethodNameSystem] && ![s isEqualToString:@""]) {
         tempName = s;
       }
     }
