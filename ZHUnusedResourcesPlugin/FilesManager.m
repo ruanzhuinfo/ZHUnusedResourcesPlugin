@@ -119,11 +119,11 @@
   NSInteger groupIndex = -1;
   switch (fileType) {
     case FileTypeObjC:
-      pattern =  @"(imageNamed)(\\s*:\\s*)(@\"\\w+\")|(GET_IMAGE)(\\(\\w+\\))";
+      pattern = @"(imageNamed)(\\s*:\\s*)(@\"\\S+\")|(GET_IMAGE)(\\(\\S+\\))";
       groupIndex = 1;
       break;
     case FileTypeSwift:
-      pattern = @"(named)(\\s*:\\s*)(\"\\w+\")";
+      pattern = @"(named)(\\s*:\\s*)(\"\\S+\")";
       groupIndex = 1;
       break;
     case FileTypeXib:
@@ -134,6 +134,20 @@
       pattern = @"(\\S+)\\.(png|gif|jpg|jpeg)";
       groupIndex = 1;
       break;
+//    case FileTypeHtml:
+//      pattern = @"img\\s+src=\"(\\S+)\"";//<img src="xx">
+//      groupIndex = 1;
+//      break;
+//    case FileTypeJson:
+//      pattern = @":\\s+\"(\\S+)\"";//"xx"
+//      groupIndex = 1;
+//      break;
+//    case FileTypeCSS:
+//    case FileTypeH:
+//    case FileTypeC:
+//      pattern = @"(\\S+)\\.(png|gif|jpg|jpeg)";//*.png
+//      groupIndex = 1;
+//      break;
     default:
       break;
   }

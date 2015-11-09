@@ -67,6 +67,9 @@ static NSString * const kSwiftMethodNameSystem = @"named";
   
   //  imageNamed:@"xxx"
   if ([str hasPrefix:kMethodNameSystem]) {
+    
+    NSLog(@"%@", str);
+    
     NSArray *strs = [str componentsSeparatedByString:@"\""];
     for (NSString *s in strs) {
       if (![s hasPrefix:kMethodNameSystem] && ![s isEqualToString:@""]) {
