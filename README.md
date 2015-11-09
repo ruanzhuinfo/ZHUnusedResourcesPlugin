@@ -13,4 +13,4 @@
 2. 支持的项目：`OC 项目` ;
 3. 支持过滤的项目文件：`.h、.m、.mm、xib、plist、Swift`;
 4. 支持过滤的资源文件：`[UIImage imageNamed:"xxx"]`、`UIImage(named:"xxx")`、 
-自定义的方法(`GET_IMAGE("xxx")`).
+自定义的方法（`GET_IMAGE("xxx")`）.
